@@ -255,3 +255,11 @@ footer {
 .collection-card .btn:hover {
   background: #e63200;
 }
+.section {
+  background-image: url('backgroundimage.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 300px;
+}
