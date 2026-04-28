@@ -263,3 +263,63 @@ footer {
   width: 600px;
   height: 300px;
 }
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  nav ul {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (orientation: landscape) {
+  .hero {
+    padding: 40px;
+    text-align: left;
+  }
+}
+
+@media (orientation: portrait) {
+  .hero {
+    padding: 20px;
+    text-align: center;
+  }
+}
