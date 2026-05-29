@@ -20,10 +20,10 @@ Key Features and Functionality
 
 
 Timeline & Milestones
-Development began on **15 April** and was spread across key milestones:
-- **20 April – Part 1 Submission**: Initial wireframes, brand identity definition, and homepage prototype.
-- **29 May – Part 2 Submission**: Product catalog integration, shopping cart functionality, and responsive design testing.
-- **19 June – Final Part**: Full deployment with payment gateway, SEO optimization, and user experience refinements.
+Development began on 15 April and was spread across key milestones:
+- 20 April – Part 1 Submission: Initial wireframes, brand identity definition, and homepage prototype.
+- 29 May – Part 2 Submission: Product catalog integration, shopping cart functionality, and responsive design testing.
+- 19 June – Final Part: Full deployment with payment gateway, SEO optimization, and user experience refinements.
 
 
 Current Website Analysis
@@ -33,18 +33,18 @@ Current Website Analysis
 
 
 Key Features
-- Responsive Design**: Works seamlessly across desktop, tablet, and mobile.  
-- Product Catalog**: Organized sneaker listings with filtering by brand, size, and price.  
-- Shopping Cart & Checkout**: Secure and intuitive purchase flow.  
-- Payment Gateway Integration**: Support for credit cards, EFT, and mobile payments.  
-- Search & Filter Tools**: Quick access to desired sneakers.  
-- Customer Reviews**: Build trust and community engagement.  
-- Sneaker Culture Blog**: Lifestyle content to strengthen brand identity.  
+- Responsive Design: Works seamlessly across desktop, tablet, and mobile.  
+- Product Catalog: Organized sneaker listings with filtering by brand, size, and price.  
+- Shopping Cart & Checkout: Secure and intuitive purchase flow.  
+- Payment Gateway Integration: Support for credit cards, EFT, and mobile payments.  
+- Search & Filter Tools: Quick access to desired sneakers.  
+- Customer Reviews: Build trust and community engagement.  
+- Sneaker Culture Blog: Lifestyle content to strengthen brand identity.  
 
 ---
 
 Budget
-The total budget allocated is *R11,240*.  
+The total budget allocated is R11,240.  
 Breakdown:  
 - Design & Branding: R2,500  
 - Development (Frontend + Backend): R5,000  
@@ -82,4 +82,4 @@ Website Goals
 ---
 
 Conclusion
-DraFT.sneakers is designed to be more than an online store — it’s a **digital sneaker hub**. With a bold design, strong technical foundation, and clear milestones, the project balances creativity, culture, and commerce within the allocated budget and timeline.
+DraFT.sneakers is designed to be more than an online store — it’s a digital sneaker hub. With a bold design, strong technical foundation, and clear milestones, the project balances creativity, culture, and commerce within the allocated budget and timeline.
