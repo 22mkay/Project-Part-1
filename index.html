@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title >DraFT.sneakers</title>
+  
+  <meta name="description" content="Shop the latest and most exclusive premium sneakers at DraFT.sneakers. Discover Nike Air Max, Dunks, and more.">
+  <meta name="keywords" content="sneakers, Nike, Air Max 95, Dunk Low, premium sneakers, DraFT.sneakers">
+  <meta name="author" content="Mikhulu Kamogelo Flatela">
+  
+  <title>DraFT.sneakers | Premium Footwear</title>
   <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
@@ -15,54 +20,67 @@
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="shop.html">Shop</a></li>
         <li><a href="Collections.html">Collections</a></li>
-        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li> <li><a href="contact.html">Contact</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="#" id="cart-icon">🛒 <span id="cart-count">0</span></a></li>
       </ul>
     </nav>
   </header>
 
-  
   <section class="hero" style="background-color: black;">
     <h1>Step Into Style</h1>
     <p>Discover the latest sneakers from top brands.</p>
     <a href="shop.html" class="btn">Shop Now</a>
   </section>
 
-  
   <section class="products">
     <h2>Featured Sneakers</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="Images/Nike AirMax 95 Black Earth Sneakers - Green.png" alt="Sneaker 1">
-        <h3>Nike Air Max 95 "Black Earth"</h3>
-        <p>R4,360.00</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="Images/Nike AirMax Tailwind IV SE.png" alt="Sneaker 2">
-        <h3>Nike Air Max Tailwind IV SE</h3>
-        <p>R5,150.00</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="Images/Nike Dunk Low Oil Green.png" alt="Sneaker 3">
-        <h3>Nike Dunk Low "Oil Green"</h3>
-        <p>R3,800.00</p>
-        <button>Add to Cart</button>
-      </div>
-   <div class="product-card">
-    <img src="Images/Nike Air Max SE Worldwide.png" alt=" Sneaker 4">
-    <h3>Nike Air Max SE Worldwide</h3>
-    <p>R4,186.00</p>
-    <button>Add to cart</button>
-    </div> 
+    
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search for sneakers...">
     </div>
 
+    <div class="product-grid" id="productGrid">
+      <div class="product-card">
+        <img src="Images/Nike AirMax 95 Black Earth Sneakers - Green.png" alt="Nike Air Max 95 Black Earth Sneakers in Green" class="gallery-img">
+        <h3>Nike Air Max 95 "Black Earth"</h3>
+        <p>R4,360.00</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      
+      <div class="product-card">
+        <img src="Images/Nike AirMax Tailwind IV SE.png" alt="Nike Air Max Tailwind IV SE Sneakers" class="gallery-img">
+        <h3>Nike Air Max Tailwind IV SE</h3>
+        <p>R5,150.00</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      
+      <div class="product-card">
+        <img src="Images/Nike Dunk Low Oil Green.png" alt="Nike Dunk Low Oil Green Sneakers" class="gallery-img">
+        <h3>Nike Dunk Low "Oil Green"</h3>
+        <p>R3,800.00</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      
+      <div class="product-card">
+        <img src="Images/Nike Air Max SE Worldwide.png" alt="Nike Air Max SE Worldwide Sneakers" class="gallery-img">
+        <h3>Nike Air Max SE Worldwide</h3>
+        <p>R4,186.00</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div> 
+    </div>
   </section>
 
-  
+  <div id="lightbox" class="modal">
+    <span class="close-lightbox">&times;</span>
+    <img class="modal-content" id="lightbox-img">
+    <div id="caption"></div>
+  </div>
+
   <footer>
-    <p>&copy; 2026 DraFT.sneakers & mikzin. All rights reserved.</p>
+    <p>&copy; 2026 DraFT.sneakers. All rights reserved.</p>
   </footer>
+
+  <script src="JS/script.js"></script>
 </body>
 </html>
