@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Enquire about sneaker availability, sponsorships, or services at DraFT.sneakers.">
+  <title>Enquiry - DraFT.sneakers</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  
+  <header>
+    <div class="logo">DraFT.<span>sneakers</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="enquiry.html" class="active">Enquiry</a></li>
+        <li><a href="cart.html" id="cart-icon">🛒 <span id="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h1>Product & Sponsor Enquiry</h1>
+    <p>Looking for a specific shoe? Want to sponsor an event? Fill out the form below to check availability and costs.</p>
+
+    <div class="form-container" style="margin-top: 30px;">
+      <form id="enquiryForm" action="#" method="POST" novalidate>
+        
+        <div class="form-group">
+          <label for="enqName">Full Name *</label>
+          <input type="text" id="enqName" name="name" required minlength="2">
+          <div class="error-msg" id="enqNameError">Please enter your name.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="enqPhone">Phone Number (10 Digits) *</label>
+          <input type="tel" id="enqPhone" name="phone" required pattern="[0-9]{10}">
+          <div class="error-msg" id="enqPhoneError">Please enter a valid 10-digit phone number.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="enqType">Enquiry Purpose *</label>
+          <select id="enqType" name="enquiryType" required>
+            <option value="">Select an option...</option>
+            <option value="product">Product Availability</option>
+            <option value="sponsor">Become a Sponsor/Volunteer</option>
+            <option value="services">Custom Services</option>
+          </select>
+          <div class="error-msg" id="enqTypeError">Please select a purpose.</div>
+        </div>
+
+        <button type="submit" class="btn" id="enqSubmitBtn" style="width: 100%;">Submit Enquiry</button>
+        
+        <div id="enquiryResponse" class="form-response"></div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 DraFT.sneakers. All rights reserved.</p>
+  </footer>
+  
+  <script src="JS/script.js"></script>
+</body>
+</html>

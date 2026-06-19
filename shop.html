@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop the full inventory of premium Streetwear, Retro, and Performance sneakers at DraFT.sneakers.">
   <title>Shop - DraFT.sneakers</title>
   <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
-
-</body>
-  <header>
+<body> <header>
     <div class="logo">DraFT.<span>sneakers</span></div>
     <nav>
       <ul>
@@ -18,103 +16,125 @@
         <li><a href="collections.html">Collections</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="cart.html" id="cart-icon">🛒 <span id="cart-count">0</span></a></li>
       </ul>
     </nav>
   </header>
-  <main>
-   <section class="streetwear">
-    <br>
-    <center><h2>Streetwear</h2></center>
-    <br>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="Images/Nike AirMax 95 Black Earth Sneakers - Green.png" alt="Sneaker 1">
-        <h3>Nike Air Max 95 "Black Earth"</h3>
-        <p>R4,360.00</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="Images/Nike AirMax Tailwind IV SE.png" alt="Sneaker 2">
-        <h3>Nike Air Max Tailwind IV SE</h3>
-        <p>R5,150.00</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="Images/Nike Dunk Low Oil Green.png" alt="Sneaker 3">
-        <h3>Nike Dunk Low "Oil Green"</h3>
-        <p>R3,800.00</p>
-        <button>Add to Cart</button>
-      </div>
-   <div class="product-card">
-    <img src="Images/Nike Air Max SE Worldwide.png" alt=" Sneaker 4">
-    <h3>Nike Air Max SE Worldwide</h3>
-    <p>R4,186.00</p>
-    <button>Add to cart</button>
+
+  <main style="padding: 40px 20px;">
+    
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search our entire inventory...">
     </div>
-    <div class="product-card">
-        <img src="Images/Nike x Supreme Air Force 1 Low.png" alt="Sneaker 5">
-        <h3>Nike Air Force 1 Low</h3>
-        <p>R3,650.00</p>
-        <button>Add to Cart</button>
-      </div> 
-    </div>
+
+    <section class="products streetwear">
+      <h2 style="text-align: center; margin-bottom: 30px;">Streetwear</h2>
+      <div class="product-grid" id="productGrid">
+        
+        <div class="product-card">
+          <img src="Images/Nike AirMax 95 Black Earth Sneakers - Green.png" alt="Nike Air Max 95 Black Earth" class="gallery-img">
+          <h3>Nike Air Max 95 "Black Earth"</h3>
+          <p>R4,360.00</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+          <img src="Images/Nike AirMax Tailwind IV SE.png" alt="Nike Air Max Tailwind IV SE" class="gallery-img">
+          <h3>Nike Air Max Tailwind IV SE</h3>
+          <p>R5,150.00</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+          <img src="Images/Nike Dunk Low Oil Green.png" alt="Nike Dunk Low Oil Green" class="gallery-img">
+          <h3>Nike Dunk Low "Oil Green"</h3>
+          <p>R3,800.00</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+          <img src="Images/Nike Air Max SE Worldwide.png" alt="Nike Air Max SE Worldwide" class="gallery-img">
+          <h3>Nike Air Max SE Worldwide</h3>
+          <p>R4,186.00</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+          <img src="Images/Nike x Supreme Air Force 1 Low.png" alt="Nike Air Force 1 Low" class="gallery-img">
+          <h3>Nike Air Force 1 Low</h3>
+          <p>R3,650.00</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div> 
+        
+      </div>
     </section>
-    <hr>
-    <br>
+    
+    <hr style="margin: 40px 0; border: 1px solid #ddd;">
 
-    <section class="retro">
-        <br>
-    <center><h2>Retro</h2></center>
-    <br>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="Images/adidas Originals Men's Tokyo BeigeBlack Sneaker.png" alt="Sneaker 1">
-        <h3>adidas Originals Men's Tokyo "Beige/Black"</h3>
-        <p>R1,999.00</p>
-        <button>Add to Cart</button>
+    <section class="products retro">
+      <h2 style="text-align: center; margin-bottom: 30px;">Retro</h2>
+      <div class="product-grid">
+        
+        <div class="product-card">
+          <img src="Images/adidas Originals Men's Tokyo BeigeBlack Sneaker.png" alt="adidas Originals Tokyo Beige/Black" class="gallery-img">
+          <h3>adidas Originals Men's Tokyo "Beige/Black"</h3>
+          <p>R1,999.00</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+          <img src="Images/The North Face Men's Glenclyffe Low Olive Sneaker.png" alt="The North Face Glenclyffe Low Olive" class="gallery-img">
+          <h3>The North Face Men's Glenclyffe "Low Olive"</h3>
+          <p>R5,499.00</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+          <img src="Images/Nike Men's Air Max Essential Brown Sneaker.png" alt="Nike Air Max Essential Brown" class="gallery-img">
+          <h3>Nike Air Max "Essential Brown"</h3>
+          <p>R3,999.00</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        
       </div>
-      <div class="product-card">
-        <img src="Images/The North Face Men's Glenclyffe Low Olive Sneaker.png" alt="Sneaker 2">
-        <h3>The North Face Men's Glenclyffe "Low Olive"</h3>
-        <p>R5,499.00</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="Images/Nike Men's Air Max Essential Brown Sneaker.png" alt="Sneaker 3">
-        <h3>Nike Air Max "Essential Brown"</h3>
-        <p>R3,999.00</p>
-        <button>Add to Cart</button>
-      </div>
-      </section> 
-      <hr>
-      <br>
-
-
-     <section class="performance">
-        <br>
-    <center><h2>Performance</h2></center>
-    <br>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="Images/adidas Originals Men's Adistar XLG 2.0 White-Orange Sneaker.png" alt="Sneaker 1">
-        <h3>adidas Originals Men's Adistar XLG 2.0 "White-Orange"</h3>
-        <p>R2,360.00</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="Images/Nike Mens Uplift SC White-Black Running Shoes.png" alt="Sneaker 2">
-        <h3>Nike Mens Uplift SC "White-Black"</h3>
-        <p>R1,850.00</p>
-        <button>Add to Cart</button>
-      </div>
-    </div>
     </section> 
-    <hr>
-    <br>
+    
+    <hr style="margin: 40px 0; border: 1px solid #ddd;">
+
+    <section class="products performance">
+      <h2 style="text-align: center; margin-bottom: 30px;">Performance</h2>
+      <div class="product-grid">
+        
+        <div class="product-card">
+          <img src="Images/adidas Originals Men's Adistar XLG 2.0 White-Orange Sneaker.png" alt="adidas Originals Adistar XLG 2.0 White-Orange" class="gallery-img">
+          <h3>adidas Originals Men's Adistar XLG 2.0 "White-Orange"</h3>
+          <p>R2,360.00</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+          <img src="Images/Nike Mens Uplift SC White-Black Running Shoes.png" alt="Nike Mens Uplift SC White-Black" class="gallery-img">
+          <h3>Nike Mens Uplift SC "White-Black"</h3>
+          <p>R1,850.00</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        
+      </div>
+    </section> 
 
   </main>
+
+  <div id="lightbox" class="modal">
+    <span class="close-lightbox">&times;</span>
+    <img class="modal-content" id="lightbox-img">
+    <div id="caption"></div>
+  </div>
+
   <footer>
-    <p>&copy; 2026 DraFT.sneakers & mikzin. All rights reserved.</p>
+    <p>&copy; 2026 DraFT.sneakers. All rights reserved.</p>
   </footer>
+
+  <script src="JS/script.js"></script>
 </body>
 </html>

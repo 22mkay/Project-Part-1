@@ -1,0 +1,8 @@
+# DraFT.sneakers - robots.txt
+# Instructs search engine crawlers on which pages to index
+
+User-agent: *
+Allow: /
+
+# Point crawlers to the sitemap (Update this URL once deployed)
+Sitemap: https://your-deployment-link.netlify.app/sitemap.xml

@@ -323,3 +323,236 @@ nav ul {
     text-align: center;
   }
 }
+
+/* =========================================
+   PART 3 ENHANCEMENTS (Search, Lightbox, Cart)
+   ========================================= */
+
+/* 1. Cart Counter Badge */
+#cart-count {
+  background-color: #ff3c00;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  vertical-align: top;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+/* 2. Search Bar Styling */
+.search-container {
+  margin: 0 auto 40px;
+  text-align: center;
+  max-width: 500px;
+  padding: 0 20px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 25px; /* Rounded pill shape to match modern UI */
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-family: 'Arial', sans-serif;
+}
+
+#searchInput:focus {
+  border-color: #ff3c00;
+  box-shadow: 0 0 8px rgba(255, 60, 0, 0.3);
+}
+
+/* Make Gallery Images look clickable */
+.gallery-img {
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.gallery-img:hover {
+  opacity: 0.8;
+}
+
+/* 3. Interactive Lightbox Modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000; /* Sit on top of everything */
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9); /* Dark overlay */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 70vh;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(255, 60, 0, 0.4); /* Subtle brand glow */
+  animation-name: zoom;
+  animation-duration: 0.3s;
+}
+
+/* Zoom Animation for Lightbox */
+@keyframes zoom {
+  from {transform: scale(0.8); opacity: 0;}
+  to {transform: scale(1); opacity: 1;}
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #f5f5f5;
+  font-size: 40px;
+  font-weight: bold;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.close-lightbox:hover,
+.close-lightbox:focus {
+  color: #ff3c00;
+  text-decoration: none;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.cart-container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    .cart-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    .cart-table th, .cart-table td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    .cart-table img {
+      width: 80px;
+      border-radius: 5px;
+      vertical-align: middle;
+      margin-right: 15px;
+    }
+    .cart-summary {
+      text-align: right;
+      padding: 20px;
+      background: #f5f5f5;
+      border-radius: 8px;
+    }
+    .cart-summary h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    .checkout-btn {
+      background: #ff3c00;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .checkout-btn:hover {
+      background: black;
+    }
+    .remove-btn {
+      color: #ff3c00;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .form-container {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensures padding doesn't break width */
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #ff3c00;
+  outline: none;
+}
+
+/* Validation Styles */
+.error-msg {
+  color: #d9534f;
+  font-size: 14px;
+  margin-top: 5px;
+  display: none; /* Hidden by default */
+}
+
+.input-error {
+  border-color: #d9534f !important;
+}
+
+/* AJAX Response Message Box */
+.form-response {
+  display: none;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.response-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}

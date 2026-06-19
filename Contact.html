@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact DraFT.sneakers for general inquiries and support.">
   <title>Contact - DraFT.sneakers</title>
   <link rel="stylesheet" href="CSS/style.css">
 </head>
@@ -17,6 +18,8 @@
         <li><a href="collections.html">Collections</a></li>
         <li><a href="contact.html" class="active">Contact</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="cart.html" id="cart-icon">🛒 <span id="cart-count">0</span></a></li>
       </ul>
     </nav>
   </header>
@@ -25,18 +28,55 @@
     <h1>Contact Us</h1>
     <p>We’d love to hear from you. Reach out to DraFT.sneakers for inquiries, collaborations, or support.</p>
 
-    <div class="contact-info">
+    <div class="contact-info" style="margin-bottom: 40px;">
       <p><strong>Phone:</strong> <a href="tel:+27655812660">+27 655812660</a></p>
       <p><strong>Instagram:</strong> <a href="https://instagram.com/draftsneakers.ds" target="_blank">@draftsneakers.ds</a></p>
       <p><strong>Email:</strong> info@draftsneakers.com</p>
     </div>
+
+    <div class="form-container">
+      <form id="contactForm" action="#" method="POST" novalidate>
+        
+        <div class="form-group">
+          <label for="contactName">Full Name *</label>
+          <input type="text" id="contactName" name="name" required minlength="2">
+          <div class="error-msg" id="nameError">Please enter your full name.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="contactEmail">Email Address *</label>
+          <input type="email" id="contactEmail" name="email" required>
+          <div class="error-msg" id="emailError">Please enter a valid email address.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="messageType">Type of Message *</label>
+          <select id="messageType" name="messageType" required>
+            <option value="">Select an option...</option>
+            <option value="support">Customer Support</option>
+            <option value="collab">Collaboration</option>
+            <option value="other">Other</option>
+          </select>
+          <div class="error-msg" id="typeError">Please select a message type.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="contactMessage">Full Message *</label>
+          <textarea id="contactMessage" name="message" rows="5" required minlength="10"></textarea>
+          <div class="error-msg" id="msgError">Message must be at least 10 characters long.</div>
+        </div>
+
+        <button type="submit" class="btn" id="contactSubmitBtn" style="width: 100%;">Send Message</button>
+        
+        <div id="contactResponse" class="form-response"></div>
+      </form>
+    </div>
   </section>
 
-
-
-  
   <footer>
-    <p>&copy; 2026 DraFT.sneakers & mikzin. All rights reserved.</p>
+    <p>&copy; 2026 DraFT.sneakers. All rights reserved.</p>
   </footer>
+  
+  <script src="JS/script.js"></script>
 </body>
 </html>

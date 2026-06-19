@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart | DraFT.sneakers</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">DraFT.<span>sneakers</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="Collections.html">Collections</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+       <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="cart.html" class="active" id="cart-icon">🛒 <span id="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="cart-container">
+    <h2>Your Shopping Cart</h2>
+    
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Size</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="cart-table-body">
+        </tbody>
+    </table>
+
+    <div class="cart-summary">
+      <h3>Subtotal: <span id="cart-subtotal">R0.00</span></h3>
+      <p>Shipping calculated at checkout.</p><br>
+      <button class="checkout-btn">Proceed to Secure Checkout</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 DraFT.sneakers. All rights reserved.</p>
+  </footer>
+
+  <script src="JS/script.js"></script>
+</body>
+</html>
